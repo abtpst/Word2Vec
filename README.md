@@ -82,3 +82,16 @@ Looks like we were right! We can get useful information from smileys. Note that 
 
 Finally, let’s test our model and see how it does on the test set.
 
+**d.	Building the classifier**
+
+Here we will build a classifier that will take a new piece of text and classify it as positive or negative. We will be creating a RandomForest classifier.  Also, we will be using K-Means clustering to create feature vectors for our training and test sets. Let’s break down this process 
+
+i.	The classifier will need to look at training and test data to decide the sentiment tag.
+
+ii.	Our model will aid the classifier in determining the terms that should be considered relevant. Remember that we said that our model created 16982 wordvectors. This is the vocabulary of the model. Note that the classifier and the model will use the same training data. So, if we have confidence in our model, with respect to our training set, then we can use our model as a reference to find out what is relevant and what is not.
+
+iii.	So, we will look at all of the labeled training and test data. Note that, for the classifier, unlabeled training data is of no use. We will create feature vectors for each review in our labeled training set and our test set. While creating the feature vectors, we will ignore any terms that do not appear in the vocabulary of our model. This is the crucial step where our model comes into play.
+
+iv.	Finally, we can feed the training set feature vectors to the classifier, along with the sentiment tags. Next we feed the test set feature vectors and let the classifier come up with the sentiment tags.
+
+` randomForest.py the python script that does all of that'
