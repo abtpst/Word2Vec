@@ -21,3 +21,24 @@ iii. Finally return a list of relevant words/tokens representing each review.
 
 Now we are ready to train our model. Also, notice that our training set consists of both labeled and unlabeled data. Another advantage of Word2Vec in this context is that it will be able to form meaningful relationships between words even without explicit knowledge of the tags. More on this later.
 
+**b.	Training**
+
+`trainModel.py trains and stores the word2vec model`
+
+Please go through the well documented script to understand how the word2vec model is built.
+
+Main features of this model are
+
+i.	We want all word vectors to have a dimension of 500. In other words, each word vector has 500 features.
+
+ii.	We are ignoring any word that appears less than 40 times in our corpus.
+
+iii.	For each review or text we analyze, we are looking at phrases of 10 words at most.
+
+Now let’s review what all of this gives us
+
+**c.	Testing and analyzing the model**
+
+Word2Vec’s gensim implementation has some really nice functions that let us ‘look’ into the model. Here is a python script for exploring the model
+
+
