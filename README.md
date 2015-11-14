@@ -7,4 +7,4 @@ Here are the steps that I have taken
 
 The purpose of this step is to clean the data of anything that is considered irrelevant. Mostly these are stopwords, special symbols and html tags. However, it might also be prudent to keep some of the special symbols and stopwords. The reasons for this will become apparent later.
 
-`cleanup.py contains the script and functions to perfoem data cleanup`
+`cleanup.py contains the script and functions to perform data cleanup`
