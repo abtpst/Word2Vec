@@ -14,7 +14,9 @@ Note that I am indicating that I do not want to remove numbers and smileys. This
 Here is a summary of what we achieved in this step
 
 i.	Break up the reviews into individual sentences
+
 ii. From individual sentences, take out all text that is considered irrelevant.
+
 iii. Finally return a list of relevant words/tokens representing each review.
 
 Now we are ready to train our model. Also, notice that our training set consists of both labeled and unlabeled data. Another advantage of Word2Vec in this context is that it will be able to form meaningful relationships between words even without explicit knowledge of the tags. More on this later.
