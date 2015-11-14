@@ -94,4 +94,10 @@ iii.	So, we will look at all of the labeled training and test data. Note that, f
 
 iv.	Finally, we can feed the training set feature vectors to the classifier, along with the sentiment tags. Next we feed the test set feature vectors and let the classifier come up with the sentiment tags.
 
-` randomForest.py the python script that does all of that'
+` randomForest.py the python script that does all of that`
+`classifierFuncs.py is the helper script for clustering and other functions`
+
+**e.	Evaluating the classifier**
+
+This classifier gives me 84% accuracy on the test set. Not bad really. We can tweak our model’s parameters to see if we gain anything. 
+
