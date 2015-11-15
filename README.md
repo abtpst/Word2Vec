@@ -1,5 +1,13 @@
 # Word2Vec
 
+I have prepared the code base to tackle the problem of sentiment analysis. I believe that the methods that I explore here can be modified to perform document tagging. Basically, both problems involve looking at a piece of text and categorizing it. We will look at binary sentiment analysis i.e. good or bad. 
+
+The problem set is taken from
+
+https://www.kaggle.com/c/word2vec-nlp-tutorial
+
+The labeled data set consists of 50,000 IMDB movie reviews, specially selected for sentiment analysis. The sentiment of reviews is binary, meaning the IMDB rating < 5 results in a sentiment score of 0, and rating >=7 have a sentiment score of 1. No individual movie has more than 30 reviews. The 25,000 review labeled training set does not include any of the same movies as the 25,000 review test set. In addition, there are another 50,000 IMDB reviews provided without any rating labels.
+
 Google's Word2Vec is a deep-learning inspired method that focuses on the meaning of words. Word2Vec attempts to understand meaning and semantic relationships among words. It works in a way that is similar to deep approaches, such as recurrent neural nets or deep neural nets, but is computationally more efficient.
 Here are the steps that I have taken
 
