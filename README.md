@@ -11,6 +11,14 @@ The labeled data set consists of 50,000 IMDB movie reviews, specially selected f
 Google's Word2Vec is a deep-learning inspired method that focuses on the meaning of words. Word2Vec attempts to understand meaning and semantic relationships among words. It works in a way that is similar to deep approaches, such as recurrent neural nets or deep neural nets, but is computationally more efficient.
 Here are the steps that I have taken
 
+**Setup** 
+
+I am using gensim for Word2Vec implementation. Please install using
+
+https://radimrehurek.com/gensim/install.html
+
+I would recommend python 3.x but it works with python2.x as well
+
 **a.	Preprocessing**
 
 The purpose of this step is to clean the data of anything that is considered irrelevant. Mostly these are stopwords, special symbols and html tags. However, it might also be prudent to keep some of the special symbols and stopwords. The reasons for this will become apparent later.
